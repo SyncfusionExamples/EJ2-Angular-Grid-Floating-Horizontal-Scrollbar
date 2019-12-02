@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="container" style="position: absolute;">
+    <ejs-grid #grid (dataBound)='onDataBound($event)' width='auto' height='auto' [dataSource]='data'>
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+            <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+            <e-column field='Freight' headerText='Freight' format='C2' width=150></e-column>
+            <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+            <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+            <e-column field='EmployeeID' headerText='Employee ID' width=150></e-column>
+            <e-column field='OrderDate' headerText='Order Date' format='yMd' width=150></e-column>
+            <e-column field='RequiredDate' headerText='Required Date' format='yMd' width=150></e-column>
+            <e-column field='ShippedDate' headerText='Shipped Date' format='yMd' width=150></e-column>
+            <e-column field='ShipVia' headerText='Ship Via' width=150></e-column>
+            <e-column field='ShipAddress' headerText='Ship Address' width=150></e-column>
+            <e-column field='ShipRegion' headerText='Ship Region' width=150></e-column>
+            <e-column field='ShipPostalCode' headerText='Ship Postal Code' width=150></e-column>
+            <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+        </e-columns>
+    </ejs-grid>
+</div>
+<router-outlet></router-outlet>
